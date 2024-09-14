@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Héctor González</title>
+  <meta name="description" content="Portafolio de Héctor Andrés González Mora, desarrollador novato con conocimientos en SQL Server, HTML, CSS, JavaScript, y más. Descubre mis proyectos y habilidades.">
+  <meta name="keywords" content="desarrollo web, portafolio, HTML, CSS, JavaScript, GitHub, proyectos, SQL, SQL Server, Java, Héctor Andrés González Mora">
+  <meta name="author" content="Héctor Andrés González Mora">
+  <meta name="robots" content="index, follow">
+  <!--   <link rel="canonical" href="https://www.tu-dominio.com/">  -->
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.css">
+
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-lentes.jpg" alt="Héctor González" width="100" loading="lazy">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Héctor González">Héctor González</h1>
+
+          <p class="title">Técnico en Programación en formación</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Info de Contacto</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hhector.agm@gmail.com" class="contact-link email-link">hhector.agm@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+
+              <a href="tel:56961130515" class="contact-link">+56 9 61130515</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+
+              <address>Santiago, Chile</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hectoryefc/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://github.com/hectorgm26" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        
+
+      </div>
+
+
+      <a href="./assets/docs/CV Héctor González Mora.pdf" class="download-button" download>Descargar Currículum</a>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link data-page-target="about">Sobre mí</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="resume">Formación y Experiencia</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="portfolio">Proyectos</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sobre Mi</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            ¡Soy Héctor! Estudié Derecho, y tras un tiempo ejerciendo como Freelance, decidí cambiar de rumbo y me pasé al mundo de la programación.
+          </p>
+          <p>
+            Desde entonces disfruto ideando soluciones a problemas digitales, aprendiendo nuevas tecnologías, buscando bugs, y creando experiencias web y de escritorio para distintos tipos de usuarios.
+          </p>
+          <p>
+            Soy una persona curiosa, apasionada por aprender, y me gusta compartir mi conocimiento y colaborar en equipo. Me encanta el testing, y creo en su vital importancia para el desarrollo de software de calidad. 
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">¿Qué se hacer?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SQL Server</h4>
+
+                <p class="service-item-text">
+                  Manejo de bases de datos, creación de vistas y funciones avanzadas con SQL Server.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Manejo de Git</h4>
+
+                <p class="service-item-text">
+                  Control de versiones y colaboración en proyectos utilizando Git/GitHub.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">HTML & CSS</h4>
+
+                <p class="service-item-text">
+                  Desarrollo de interfaces web responsivas utilizando HTML, CSS, Flexbox, Grid y media queries.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">JavaScript Básico</h4>
+
+                <p class="service-item-text">
+                  Implementación de lógica básica en aplicaciones web con JavaScript.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+<!-- HABILIDADES BLANDAS -->
+<section id="soft-skills">
+  <div class="separator-bar"></div> <!-- Barra de separación -->
+  <h2>Soft Skills</h2>
+  <br>
+  <div class="soft-skills-content">
+    <ul>
+      <li><ion-icon name="people-outline"></ion-icon> Trabajo en equipo</li>
+      <li><ion-icon name="construct-outline"></ion-icon> Resolución de problemas</li>
+      <li><ion-icon name="sync-outline"></ion-icon> Adaptabilidad</li>
+      <li><ion-icon name="happy-outline"></ion-icon> Tolerancia a la frustración</li>
+      <li><ion-icon name="alarm-outline"></ion-icon> Trabajo bajo presión</li>
+      <li><ion-icon name="book-outline"></ion-icon> Autodidacta</li>
+      <li><ion-icon name="language-outline"></ion-icon> Inglés: Escrito Intermedio, Oral Básico.</li>
+    </ul>
+  </div>
+</section>
+
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Trayectoria</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Instituto Profesional San Sebastián (ex IP CIISA)</h4>
+
+              <span>2024 al presente</span>
+
+              <p class="timeline-text">
+                Estudiante de la carrera de Técnico en Programación y Análisis de sistemas.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Alura Latam (Oracle Next Education)</h4>
+
+              <span>2024 al presente</span>
+
+              <p class="timeline-text">
+                Estudiante del programa ONE de Oracle, con 6 meses de formación online en habilidades blandas (Emprendimiento y Metodologías Ágiles), Lógica de Programación y Back End (Java, POO, Spring, Spring Boot y Git/GitHub).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Alberto Hurtado</h4>
+            
+              <span>2016 — 2022</span>
+            
+              <p class="timeline-text">
+                Egresado de la carrera de Derecho. <br>
+                Distinción por nota máxima en tesis de grado. <br>
+                Como miembro de la Clínica Jurídica de Transparencia y Derechos Humanos, obtuve una sentencia favorable de la Corte Suprema que concedió asilo político a jueces venezolanos exiliados. <br>
+                Para más detalles:
+                <ul>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <a href="https://derecho.uahurtado.cl/noticias/clinica-juridica-obtiene-importante-sentencia-sobre-asilo-politico-ante-la-corte-suprema/" target="_blank" style="color: #51d1f6;">* Clínica Jurídica obtiene importante sentencia sobre asilo político ante la Corte Suprema</a>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <a href="https://www.diarioconstitucional.cl/2021/09/28/las-razones-por-las-cuales-la-corte-suprema-acogio-el-recurso-de-amparo-deducido-por-jueces-venezolanos-y-ordeno-evaluar-la-peticion-de-prorroga-de-su-visado-como-asilados-politicos/" target="_blank" style="color: #51d1f6;">* Razones por las cuales la Corte Suprema acogió el recurso de amparo de jueces venezolanos</a>
+                  </li>
+                </ul>
+              </p>
+
+            
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <div class="separator-bar"></div>
+        <br>
+        
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia laboral</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Procurador Judicial - Clínica Jurídica de Transparencia y Derechos Humanos de la Universidad Alberto Hurtado</h4>
+
+              <span>Marzo 2021 — Abril 2022</span>
+
+              <p class="timeline-text">
+                Encargado de la gestión y monitoreo de diversas causas judiciales, relacionadas a transgresiones gravísimas a los derechos humanos, interponiendo acciones de amparo, y otros recursos judiciales
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">E-Promoter para Samsung Chile</h4>
+
+              <span>Agosto 2020 — Enero 2021</span>
+
+              <p class="timeline-text">
+                Asesoría a través de chat como promotor/vendedor virtual de Samsung TV/Audio, incluyendo derivación a Servicio Técnico. Premiado como el segundo mejor E-Promoter de la campaña en el periodo Cyber Monday 2020
+              </p>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="automation">
+              <div class="project-item-left">
+                <a data-img="./assets/images/azar.PNG"">
+                  <figure class="project-img">
+                    <img src="./assets/images/azar.PNG" alt="Juego Azar" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Juego de Adivinar el Número</h3>
+                </a>
+              </div>
+              <div class="project-content">
+                <div>
+                  
+                  <p class="project-description">
+                    Aplicación web interactiva, con el fin de desafiar al usuario a adivinar un número secreto generado aleatoriamente.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a href="https://github.com/hectorgm26/juego-nums-aleatorios" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
+                  <a href="https://hectorgm26.github.io/juego-nums-aleatorios/" class="btn btn-secondary" target="_blank">Preview del Proyecto</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item active">
+              <div class="project-item-left">
+                <a data-img="./assets/images/encriptador.png">
+                  <figure class="project-img">
+                    <img src="./assets/images/encriptador.png" alt="Encriptador de Texto" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Encriptador de Texto</h3>
+                </a>
+              </div>
+              <div class="project-content">
+                <div>
+                  
+                  <p class="project-description">
+                    Encriptador de texto. El objetivo era crear una aplicación web que permitiese encriptar y desencriptar un texto, mediante un cifrado por sustitución, una de las técnicas más simples dentro de la criptografía.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a href="https://github.com/hectorgm26/encriptador-texto" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
+                  <a href="https://hectorgm26.github.io/encriptador-texto/" class="btn btn-secondary" target="_blank">Preview del Proyecto</a>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Repite para otros proyectos -->
+
+            
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="copyright">
+      &copy; 2024 Héctor Andrés González Mora. Todos los derechos reservados. Stgo, Chile.
+    </div>
+  </footer>
+  <!-- Espacio adicional después del footer -->
+<div class="footer-spacer"></div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

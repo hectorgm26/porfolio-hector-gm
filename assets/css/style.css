@@ -1090,7 +1090,18 @@ main {
   .download-button {
     margin-top: 10px; /* Espacio superior para separar del contenido anterior */
   }
-  
+
+  .service-item .service-icon-box {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Alineación adicional por seguridad */
+  }
+
+  .service-item .service-icon-box ion-icon {
+    margin: 0 auto; /* Asegura que el ícono esté centrado */
+  }
+
 }
 
 
@@ -1224,6 +1235,16 @@ main {
   margin-top: 10px; /* Espacio superior para separar del contenido anterior */
 }
 
+.service-item .service-icon-box {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Alineación adicional por seguridad */
+}
+
+.service-item .service-icon-box ion-icon {
+  margin: 0 auto; /* Asegura que el ícono esté centrado */
+}
 
 
 

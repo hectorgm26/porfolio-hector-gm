@@ -212,7 +212,10 @@ article.active {
 
 .h3 { font-size: var(--fs-2); }
 
-.h4 { font-size: var(--fs-4); }
+.h4 { font-size: var(--fs-4);
+
+text-align: center;
+}
 
 .h5 {
   font-size: var(--fs-7);
@@ -615,6 +618,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  text-align: center;
 }
 
 

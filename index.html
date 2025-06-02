@@ -1,579 +1,540 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Héctor González</title>
-  <meta name="description" content="Portafolio de Héctor Andrés González Mora, desarrollador novato con conocimientos en SQL Server, HTML, CSS, JavaScript, y más. Descubre mis proyectos y habilidades.">
-  <meta name="keywords" content="desarrollo web, portafolio, HTML, CSS, JavaScript, GitHub, proyectos, SQL, SQL Server, Java, Héctor Andrés González Mora">
-  <meta name="author" content="Héctor Andrés González Mora">
-  <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------- TITLE WEB--------------------->
+    <title> Welcome to Hector Gonzalez Portfolio </title>
 
+    <!-- DESCRIPCIÓN PARA SEO -->
+    <meta name="description"
+        content="Portafolio de Héctor González Mora - Programador en formación desde Chile. Exabogado, apasionado por resolver problemas, aprender nuevas tecnologías y encontrar bugs.">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.css">
+    <!-- AUTOR -->
+    <meta name="author" content="Héctor González Mora">
 
+    <!-- PALABRAS CLAVE PARA SEO -->
+    <meta name="keywords"
+        content="Héctor González, portafolio, programador, desarrollador web, Chile, estudiante programación, QA testing, Java, Python, HTML, CSS, JavaScript">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- META OPEN GRAPH (Para compartir en redes sociales) -->
+    <meta property="og:title" content="Portafolio | Héctor González" />
+    <meta property="og:description"
+        content="Programador en formación desde Chile. Mira mis proyectos, habilidades y cómo contactarme." />
+    <meta property="og:image" content="https://hectorgm26.github.io/porfolio-hector-gm/assets/images/avatar-lentes.jpg" />
+    <meta property="og:url" content="https://hectorgm26.github.io/porfolio-hector-gm/" />
+    <meta property="og:type" content="website" />
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!--------------------- LINK FAVICON --------------------->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+    <!--------------------- LINK GOOGLE FONT --------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!--------------------- LINK MATERIAL ICON --------------------->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--------------------- LINK CSS FILES--------------------->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+    <!--------------------- HEADER --------------------->
+    <header class="topbar">
+        <a href="#" class="logo" style="visibility: hidden; pointer-events: none;">
+            <!-- logo eliminado visualmente, pero sigue ocupando espacio -->
+        </a>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-lentes.jpg" alt="Héctor González" width="100" loading="lazy">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Héctor González">Héctor González</h1>
-
-          <p class="title">Técnico en Programación en formación</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Info de Contacto</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
+        <button class="icon-btn theme-btn" data-theme-btn>
+            <span class="material-symbols-outlined dark icon" aria-hidden="true"> dark_mode </span>
+            <span class="material-symbols-outlined light icon" aria-hidden="true"> light_mode </span>
         </button>
+    </header>
+
+
+    <!--------------------- MAIN --------------------->
+    <main>
+        <article>
+            <!--====== #HERO ======-->
+
+            <section class="section hero">
+
+                <div class="container">
+                    <!--====== #HERO-IMG -> PHOTO PROFILE ======-->
+                    <figure class="hero-banner img-holder" style="--width: 240; --height: 240;">
+                        <img src="./assets/images/profile.png" alt="Hector Gonzalez | Programador en formación"
+                            class="img-cover">
+                    </figure>
+
+                    <!--====== GENERAL DATA PROFILE ======-->
+                    <div class="hero-content">
+                        <!--====== PROFESSION ======-->
+                        <span class="label-large section-subtitle">Programador en formación</span>
+                        <!--====== NAME ======-->
+                        <h1 class="display-small">Héctor González Mora</h1>
+                        <!--====== DESCRIPTION PROFILE ======-->
+                        <p class="body-large section-text"> desde Chile</p>
+                        <!--====== DATA PROFILE SECONDARY ======-->
+                        <div class="btn-wrapper">
+                            <!--====== EMAIL DATA ======-->
+                            <a href="mailto:hhector.agm@gmail.com" class="chip">
+                                <!--====== ICON EMAIL ======-->
+                                <span class="material-symbols-outlined" aria-hidden="true"> Email </span>
+                                <!--====== EMAIL ======-->
+                                <span class="label-large">hhector.agm@gmail.com</span>
+
+                                <!-- <div class="state-layer-gb">
+                            </a>
+
+                            <!--====== PHONE DATA ======-->
+                                <a href="tel:+56961130515" class="chip">
+                                    <span class="material-symbols-outlined"> call </span>
+                                    <span class="label-large">+569 61130515</span>
+
+                                    <div class="state-layer"></div>
+                                </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--====== #MAIN CONTENT ======-->
+            <div class="article">
+                <div class="about-card">
+                    <h2 class="card-title title-medium">Sobre Mí</h2>
+
+                    <p class="body-medium card-text">¡Hola! Soy Héctor, exabogado y estudiante de Técnico en
+                        Programación (2º año). Me apasiona resolver problemas, aprender nuevas tecnologías y buscar
+                        bugs. Busco mi primera oportunidad en TI. Soy curioso, autodidacta y colaboro bien en equipo.
+                    </p>
+
+
+                    <ul class="about-list">
+
+                        <li class="list-item">
+                            <a href="https://www.linkedin.com/in/hectoryefc/" target="_blank" class="link__web">
+                                <span class="material-symbols-outlined" aria-hidden="true"> business_center </span>
+                                <span class="label-medium">LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li class="list-item">
+                            <a href="https://github.com/hectorgm26" target="_blank" class="link__web">
+                                <span class="material-symbols-outlined" aria-hidden="true"> terminal </span>
+                                <span class="label-medium">GitHub</span>
+                            </a>
+                        </li>
+
+                        <li class="btn-cv-container">
+                            <a href="assets/docs/Curriculum Héctor González Mora.pdf" download
+                                class="btn btn-cv">Descargar Curriculum</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
 
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:hhector.agm@gmail.com" class="contact-link email-link">hhector.agm@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Teléfono</p>
-
-              <a href="tel:56961130515" class="contact-link">+56 9 61130515</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Ubicación</p>
-
-              <address>Santiago, Chile</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/hectoryefc/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        
-          <li class="social-item">
-            <a href="https://github.com/hectorgm26" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-        
-
-      </div>
-
-
-      <a href="./assets/docs/CV Héctor González Mora.pdf" class="download-button" download>Descargar Currículum</a>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link data-page-target="about">Sobre mí</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link data-page-target="resume">Formación y Experiencia</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link data-page-target="portfolio">Proyectos</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">Sobre Mi</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            ¡Soy Héctor! Estudié Derecho, y tras un tiempo ejerciendo como Freelance, decidí reconvertirme al mundo Informático.
-          </p>
-          <p>
-            Desde entonces disfruto ideando soluciones a problemas digitales, aprendiendo nuevas tecnologías y buscando bugs.
-          </p>
-          <p>
-            Busco oportunidades para iniciar mi carrera laboral en el campo de TI. Soy una persona curiosa, apasionada por aprender, actualmente estudio Técnico en Programación, y me gusta colaborar en equipo.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">¿Qué se hacer?</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">SQL</h4>
-
-                <p class="service-item-text">
-                  Diseño y programación de bases de datos, creación de vistas, procedimientos almacenados y funciones avanzadas con SQL Server, MySQL y PostgreSQL.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Manejo de Git, Jira & Metodologias Ágiles</h4>
-
-                <p class="service-item-text">
-                  Control de versiones y colaboración en proyectos utilizando Git/GitHub, y Jira o Trello para la gestión de tareas por medio de SCRUM.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">HTML & CSS</h4>
-
-                <p class="service-item-text">
-                  Desarrollo de interfaces web responsivas utilizando HTML, CSS, Flexbox, Grid y media queries.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                  <ion-icon name="laptop-outline" style="color: yellow; font-size: 40px;"></ion-icon> <!-- Nuevo ícono de programación -->
-              </div>
-              <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Java & JavaScript</h4> <!-- Título actualizado -->
-                  <p class="service-item-text">Fundamentos de programación, programación orientada a objetos, excepciones, y conexiones HTTP request y response con APIs.</p> <!-- Descripción actualizada -->
-              </div>
-          </li>
-
-          </ul>
-
-        </section>
-
-
-<!-- HABILIDADES BLANDAS -->
-<section id="soft-skills">
-  <div class="separator-bar"></div> <!-- Barra de separación -->
-  <h2>Soft Skills</h2>
-  <div class="soft-skills-content">
-    <ul>
-      <li><ion-icon name="people-outline"></ion-icon> Trabajo en equipo</li>
-      <li><ion-icon name="construct-outline"></ion-icon> Resolución de problemas</li>
-      <li><ion-icon name="sync-outline"></ion-icon> Adaptabilidad</li>
-      <li><ion-icon name="happy-outline"></ion-icon> Tolerancia a la frustración</li>
-      <li><ion-icon name="alarm-outline"></ion-icon> Trabajo bajo presión</li>
-      <li><ion-icon name="book-outline"></ion-icon> Autodidacta</li>
-      <li><ion-icon name="language-outline"></ion-icon> Inglés: Escrito Intermedio, Oral Básico.</li>
-    </ul>
-  </div>
-</section>
-
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Trayectoria</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Educación</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" style="text-align: left;">Instituto Profesional San Sebastián (ex IP CIISA)</h4>
-
-              <span>2024 al presente</span>
-
-              <p class="timeline-text">
-                Estudiante de la carrera de Técnico en Programación y Análisis de sistemas.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" style="text-align: left;">Alura Latam (Oracle Next Education)</h4>
-
-              <span>2024-2025 (Finalizado)</span>
-
-              <p class="timeline-text">
-                Graduado del programa ONE de Oracle, con formación online en habilidades blandas (Emprendimiento y Metodologías Ágiles), Lógica de Programación y Backend (Java, POO y Spring Boot).
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" style="text-align: left;">Universidad Alberto Hurtado</h4>
-            
-              <span>2016 — 2022 (Finalizado)</span>
-            
-              <p class="timeline-text">
-                Egresado de la carrera de Derecho. <br>
-              </p>
-
-            
-            </li>
-
-
-          </ol>
-
-        </section>
-
-        <div class="separator-bar"></div>
-        <br>
-        
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experiencia laboral</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Procurador Judicial - Clínica Jurídica de Transparencia y Derechos Humanos de la Universidad Alberto Hurtado</h4>
-
-              <span>Marzo 2021 — Abril 2022</span>
-
-              <p class="timeline-text">
-                Encargado de la gestión y monitoreo de diversas causas judiciales, relacionadas a transgresiones gravísimas a los derechos humanos, interponiendo acciones de amparo, y otros recursos judiciales
-              </p>
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-
-      </article>
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portafolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="project-list">
-        
-            <li class="project-item active">
-              <div class="project-item-left">
-                <a data-img="./assets/images/encriptador.png">
-                  <figure class="project-img">
-                    <img src="./assets/images/encriptador.png" alt="Encriptador de Texto" loading="lazy">
-                  </figure>
-                  <h3 class="project-title">Encriptador de Texto</h3>
-                </a>
-              </div>
-              <div class="project-content">
                 <div>
-                  <p class="project-description">
-                    Aplicación web interactiva que permite encriptar y desencriptar un texto, mediante un cifrado por sustitución.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-item">HTML</span>
-                    <span class="tech-item">CSS</span>
-                    <span class="tech-item">JavaScript</span>
-                  </div>
-                </div>
-                <div class="project-buttons">
-                  <a href="https://github.com/hectorgm26/encriptador-texto" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
-                  <a href="https://hectorgm26.github.io/encriptador-texto/" class="btn btn-secondary" target="_blank">Preview del Proyecto</a>
-                </div>
-              </div>
-            </li>
-        
-            <li class="project-item active">
-              <div class="project-item-left">
-                <a data-img="./assets/images/monedasconversor.PNG">
-                  <figure class="project-img">
-                    <img src="./assets/images/monedasconversor.PNG" alt="Conversor de monedas" loading="lazy">
-                  </figure>
-                  <h3 class="project-title">Conversor de monedas</h3>
-                </a>
-              </div>
-              <div class="project-content">
-                <div>
-                  <p class="project-description">
-                    Aplicación Java de consola, que permite realizar conversiones de divisas en tiempo real, utilizando una API que provee las tasas de cambio actualizadas al momento de seleccionar la moneda de interes.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-item">Java</span>
-                  </div>
-                </div>
-                <div class="project-buttons">
-                  <a href="https://github.com/hectorgm26/conversor-monedas" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
-                </div>
-              </div>
-            </li>
-        
-            <!-- Nuevo Proyecto 1 -->
-            <li class="project-item active">
-              <div class="project-item-left">
-                <a data-img="">
-                  <figure class="project-img">
-                    <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ScreenMatch Series Manager" loading="lazy">
-                  </figure>
-                  <h3 class="project-title">ScreenMatch Series Manager</h3>
-                </a>
-              </div>
-              <div class="project-content">
-                <div>
-                  <p class="project-description">
-                    Aplicación en consola que permite buscar, gestionar y organizar datos de series y episodios, utilizando la API de OMDb para obtener información y Spring Data JPA para la persistencia en base de datos.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">Spring Boot</span>
-                    <span class="tech-item">Spring Data JPA</span>
-                    <span class="tech-item">PostgreSQL</span>
-                    <span class="tech-item">Hibernate</span>
-                  </div>
-                </div>
-                <div class="project-buttons">
-                  <a href="https://github.com/hectorgm26/project-screen-match" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
-                </div>
-              </div>
-            </li>
-        
-            <!-- Nuevo Proyecto 2 -->
-            <li class="project-item active">
-              <div class="project-item-left">
-                <a data-img="">
-                  <figure class="project-img">
-                    <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="LiterAlura" loading="lazy">
-                  </figure>
-                  <h3 class="project-title">LiterAlura</h3>
-                </a>
-              </div>
-              <div class="project-content">
-                <div>
-                  <p class="project-description">
-                    Catálogo de libros interactivo que permite consultar información de libros y autores mediante una API pública. Desarrollado con Spring Boot e interactivo a través de un menú de consola.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">Spring Boot</span>
-                    <span class="tech-item">SSpring Data JPA</span>
-                    <span class="tech-item">PostgreSQL</span>
-                    <span class="tech-item">Hibernate</span>
-                  </div>
-                </div>
-                <div class="project-buttons">
-                  <a href="https://github.com/hectorgm26/challenge-Literalura-one" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
-                </div>
-              </div>
-            </li>
-        
-            <!-- Nuevo Proyecto 3 -->
-            <li class="project-item active">
-              <div class="project-item-left">
-                <a data-img="">
-                  <figure class="project-img">
-                    <img src="https://images.unsplash.com/photo-1517650862521-d580d5348145?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foro Hub" loading="lazy">
-                  </figure>
-                  <h3 class="project-title">Foro Hub</h3>
-                </a>
-              </div>
-              <div class="project-content">
-                <div>
-                  <p class="project-description">
-                    Foro en línea para gestionar tópicos y posteos, desarrollado con Spring Boot. Incluye autenticación con Spring Security y JWT, se prueba mediante endpoints JSON con herramientas como Postman o Insomnia.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-item">Java</span>
-                    <span class="tech-item">Spring Boot</span>
-                    <span class="tech-item">Spring Security</span>
-                    <span class="tech-item">MySQL</span>
-                    <span class="tech-item">Flyway</span>
-                  </div>
-                </div>
-                <div class="project-buttons">
-                  <a href="https://github.com/hectorgm26/challenge-final-alura-forohub" class="btn btn-primary" target="_blank">Repositorio de GitHub</a>
-                </div>
-              </div>
-            </li>
-        
-          </ul>
-        
-        </section>
-        
+                    <!-- PRYMARY  TABS -->
+                    <div class="primary-tabs">
 
-      </article>
+                        <button class="tab-btn" data-tab-btn="proyect">
+                            <span class="tab-text title-small">Proyectos</span>
 
-    </div>
+                            <div class="state-layer"></div>
+                        </button>
 
-  </main>
+                        <button class="tab-btn" data-tab-btn="skills">
+                            <span class="tab-text title-small">Skills</span>
 
-  <footer class="footer">
-    <div class="copyright">
-      &copy; 2024 Héctor Andrés González Mora. Todos los derechos reservados. Stgo, Chile.
-    </div>
-  </footer>
-  <!-- Espacio adicional después del footer -->
-<div class="footer-spacer"></div>
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <button class="tab-btn" data-tab-btn="resume">
+                            <span class="tab-text title-small">Formación y Experiencia</span>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                    </div>
+
+                    <!-- PROYECTS -->
+                    <section class="section tab-content active" data-tab-content="proyect">
+                        <div class="container">
+                            <div class="proyect-list">
+
+                                <div class="card">
+
+                                    <figure class="card-banner img-holder">
+                                        <img src="./assets/images/projects/encriptador.png" alt="Encriptador de Texto"
+                                            class="img-cover">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">WebSite</span>
+
+                                        <h3 class="title-large card-title">Encriptador de Texto</h3>
+
+                                        <!-- Nuevo párrafo descripción -->
+                                        <p class="project-description">
+                                            Aplicación web interactiva que permite encriptar y desencriptar un texto,
+                                            mediante un cifrado por sustitución.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon__tec">
+                                        <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+                                        <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+                                        <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" />
+                                    </div>
+
+                                    <!-- Nuevo contenedor para botones -->
+                                    <div class="project-buttons">
+                                        <a href="https://hectorgm26.github.io/encriptador-texto/" target="_blank"
+                                            class="btn btn-yellow">Preview
+                                            Web</a>
+                                        <a href="https://github.com/hectorgm26/encriptador-texto" target="_blank"
+                                            class="btn btn-yellow">Repositorio Github</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <figure class="card-banner img-holder">
+                                        <img src="./assets/images/projects/monedasconversor.PNG"
+                                            alt="Conversor de Monedas" class="img-cover">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Aplicación de consola</span>
+
+                                        <h3 class="title-large card-title">Conversor de monedas</h3>
+
+                                        <!-- Nuevo párrafo descripción -->
+                                        <p class="project-description">
+                                            Aplicación Java para realizar conversiones de divisas en tiempo real,
+                                            integrando una API para obtener las tasas de cambio actualizadas.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon__tec">
+                                        <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" />
+                                    </div>
+
+                                    <!-- Nuevo contenedor para botones -->
+                                    <div class="project-buttons">
+
+                                        <a href="https://github.com/hectorgm26/conversor-monedas" target="_blank"
+                                            class="btn btn-yellow">Repositorio Github</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <figure class="card-banner img-holder">
+                                        <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="ScreenMatch Series Manager" loading="lazy" class="img-cover">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Aplicación de consola</span>
+
+                                        <h3 class="title-large card-title">ScreenMatch Series Manager</h3>
+
+                                        <!-- Nuevo párrafo descripción -->
+                                        <p class="project-description">
+                                            Aplicación Java con Spring Boot para buscar, gestionar y organizar datos de
+                                            series y episodios, utilizando la API de OMDb.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon__tec">
+                                        <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" />
+                                        <img src="https://skillicons.dev/icons?i=spring" alt="SpringBoot" />
+                                    </div>
+
+                                    <!-- Nuevo contenedor para botones -->
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/hectorgm26/project-screen-match" target="_blank"
+                                            class="btn btn-yellow">Repositorio Github</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <figure class="card-banner img-holder">
+                                        <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="LiterAlura" loading="lazy" class="img-cover">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">Aplicación de consola</span>
+
+                                        <h3 class="title-large card-title">LiterAlura</h3>
+
+                                        <!-- Nuevo párrafo descripción -->
+                                        <p class="project-description">
+                                            Catálogo interactivo de libros en Java con Spring Boot. Consulta información
+                                            de libros y autores, integrando una API pública para datos actualizados.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon__tec">
+                                        <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" />
+                                        <img src="https://skillicons.dev/icons?i=spring" alt="SpringBoot" />
+                                    </div>
+
+                                    <!-- Nuevo contenedor para botones -->
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/hectorgm26/challenge-Literalura-one" target="_blank"
+                                            class="btn btn-yellow">Repositorio Github</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <figure class="card-banner img-holder">
+                                        <img src="https://images.unsplash.com/photo-1517650862521-d580d5348145?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="Foro Hub" loading="lazy" class="img-cover">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">API Rest</span>
+
+                                        <h3 class="title-large card-title">Foro Hub</h3>
+
+                                        <!-- Nuevo párrafo descripción -->
+                                        <p class="project-description">
+                                            API REST desarrollada en Java con Spring Boot para gestión de tópicos y
+                                            posteos en un foro. Implementa autenticación JWT y Spring Security para su
+                                            testeo seguro en Postman.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon__tec">
+                                        <img src="https://skillicons.dev/icons?i=java&theme=light" alt="Java" />
+                                        <img src="https://skillicons.dev/icons?i=spring" alt="SpringBoot" />
+                                    </div>
+
+                                    <!-- Nuevo contenedor para botones -->
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/hectorgm26/challenge-final-alura-forohub"
+                                            target="_blank" class="btn btn-yellow">Repositorio Github</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <figure class="card-banner img-holder">
+                                        <img src="./assets/images/projects/phpapi.jpg"
+                                            alt="API de Gestión de Selección de Personal" class="img-cover">
+                                    </figure>
+
+                                    <div class="card-content">
+                                        <span class="label-large card-subtitle">API Rest</span>
+
+                                        <h3 class="title-large card-title">API de Gestión de Selección de Personal</h3>
+
+                                        <!-- Nuevo párrafo descripción -->
+                                        <p class="project-description">
+                                            Desarrollé una API RESTful en PHP con arquitectura MVC para gestionar
+                                            ofertas laborales, candidatos y
+                                            postulaciones en un Contact Center, implementando autenticación validación
+                                            de roles en su testeo con Postman.
+                                        </p>
+                                    </div>
+
+                                    <div class="icon__tec">
+                                        <img src="https://skillicons.dev/icons?i=php&theme=light" alt="PHP" />
+                                    </div>
+
+                                    <!-- Nuevo contenedor para botones -->
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/hectorgm26/creacion-api-php-mvc" target="_blank"
+                                            class="btn btn-yellow">Repositorio Github</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- RESUME -->
+                    <section class="section tab-content resume-tab" data-tab-content="resume">
+                        <div class="container">
+
+                            <h2 class="section-title title-small">Educación</h2>
+                            <div class="timeline">
+
+                                <div class="timeline-container">
+                                    <h3 class="body-large">Instituto Profesional San Sebastián (ex IP CIISA)</h3>
+                                    <p class="label-medium timeline-date">2024 al presente</p>
+                                    <p class="body-medium">Estudiante de segundo año de la carrera de Técnico en
+                                        Programación y
+                                        Análisis de sistemas.</p>
+                                </div>
+
+                                <div class="timeline-container">
+                                    <h3 class="body-large">Alura Latam (Oracle Next Education)</h3>
+                                    <p class="label-medium timeline-date">2024-2025 (Finalizado)</p>
+                                    <p class="body-medium">Graduado del programa ONE de Oracle, con formación online en
+                                        habilidades blandas, lógica de programación y backend.</p>
+                                </div>
+
+                                <div class="timeline-container">
+                                    <h3 class="body-large">Universidad Alberto Hurtado</h3>
+                                    <p class="label-medium timeline-date">2016 — 2022 (Finalizado)</p>
+                                    <p class="body-medium">Egresado de la carrera de Derecho.</p>
+                                </div>
+
+                            </div>
+
+                            <br>
+                            <hr><br>
+
+                            <h2 class="section-title title-small">Experiencia laboral</h2>
+                            <div class="timeline">
+
+                                <div class="timeline-container">
+                                    <h3 class="body-large">Procurador Judicial - Clínica Jurídica de Transparencia y
+                                        DD.HH. (UAH)</h3>
+                                    <p class="label-medium timeline-date">Marzo 2021 — Abril 2022</p>
+                                    <p class="body-medium">
+                                        Encargado de la gestión y monitoreo de causas judiciales relacionadas con
+                                        violaciones graves a los derechos humanos, incluyendo interposición de acciones
+                                        de amparo.
+                                    </p>
+                                </div>
+
+                                <!-- <div class="timeline-container">
+                                    INGRESAR AQUÍ
+                                </div> -->
+
+                            </div>
+
+                        </div>
+                    </section>
 
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+                    <section class="section tab-content contact-tab" data-tab-content="skills">
+                        <div class="container">
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                            <!-- LENGUAJES DE PROGRAMACIÓN -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Lenguajes de programación</h3>
+                                <div class="tech-icons">
+                                    <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=java" alt="Java" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=python" alt="Python" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=php" alt="PHP" class="icon">
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3 class="category-title">Herramientas</h3>
+                                <div class="tech-icons">
+                                    <img src="https://skillicons.dev/icons?i=git" alt="Git" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=linux" alt="Linux" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=postman" alt="Postman" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=idea" alt="IntelliJ IDEA" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code"
+                                        class="icon">
+                                    <img src="https://toppng.com/uploads/preview/jira-software-logo-jira-software-logo-11562914188wp8r59nt10.png"
+                                        alt="Jira" class="icon">
+                                    <img src="https://cdn.worldvectorlogo.com/logos/laragon.svg" alt="Laragon"
+                                        class="icon">
+                                    <img src="https://images.icon-icons.com/2552/PNG/512/chrome_devtools_browser_logo_icon_153005.png"
+                                        alt="Chrome Devtools Logo" class="icon">
+
+                                </div>
+                            </div>
+
+                            <!-- BACK END -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Backend</h3>
+                                <div class="tech-icons">
+                                    <img src="https://skillicons.dev/icons?i=spring" alt="SpringBoot" class="icon">
+                                </div>
+                            </div>
+
+                            <!-- FRONT END -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Frontend</h3>
+                                <div class="tech-icons">
+                                    <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" class="icon">
+                                </div>
+                            </div>
+
+                            <!-- BASE DE DATOS -->
+                            <div class="skill-category">
+                                <h3 class="category-title">Bases de datos</h3>
+                                <div class="tech-icons">
+                                    <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" class="icon">
+                                    <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="icon">
+                                    <img src="https://www.freeiconspng.com/uploads/sql-server-icon-png-8.png"
+                                        alt="SQL Server" class="icon">
+                                </div>
+                            </div>
+
+                            <!-- QA AUTOMATION -->
+                            <div class="skill-category">
+                                <h3 class="category-title">QA Testing</h3>
+                                <div class="tech-icons">
+                                    <img src="https://avatars.githubusercontent.com/u/874086?s=200&v=4" alt="JUnit Logo"
+                                        class="icon">
+                                    <img src="https://camo.githubusercontent.com/c3d3117994d32c30eec2dbe29389bd17950abc34882db0b9d15f93a62d57a7ba/687474703a2f2f68616d63726573742e6f72672f696d616765732f6c6f676f2e6a7067"
+                                        alt="Hamcrest Logo" class="icon">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38l6tx-m4yFt0OeiZTq1HYgMTExE9ikvgtA&s"
+                                        alt="Mockito Logo" class="icon">
+                                    <img src="https://avatars.githubusercontent.com/u/12528662?s=200&v=4"
+                                        alt="TestNG Logo" class="icon">
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3 class="category-title">Mobile</h3>
+                                <div class="tech-icons">
+                                    <!-- Ingresar AQUI-->
+                                </div>
+                            </div>
 
 
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <p class="body-medium"> Hecho con amor 🧡💛 | © 2024 Héctor Andrés González Mora. Todos los derechos
+                reservados. Stgo, Chile. </p>
+
+        </div>
+    </footer>
+
+    <!--------------------- LINK JS FILES--------------------->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

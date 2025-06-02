@@ -18,7 +18,6 @@ Este portafolio está diseñado para destacar mis habilidades y proyectos en el 
 - **HTML**
 - **CSS** (Flexbox, Grid)
 - **JavaScript**
-- **Git/GitHub**
 
 ## Licencia
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,14 @@
     <!--------------------- LINK MATERIAL ICON --------------------->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Para forzar que por defecto se vea la web en modo oscuro -->
+    <script>
+        (function() {
+            const theme = sessionStorage.getItem("theme") || "dark";
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
     <!--------------------- LINK CSS FILES--------------------->
     <link rel="stylesheet" href="./css/style.css">
 </head>

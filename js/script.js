@@ -14,17 +14,14 @@ const /**{nodeElement} */ $themeBtn = document.querySelector("[data-theme-btn]")
 // Selecciona el elemento HTML
 const /**{nodeElement} */ $HTML = document.documentElement;
 
-// Verifica si el sistema está configurado para el modo oscuro
-let /**{Boolean | string} */ isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-// Si hay un tema guardado en sessionStorage, úsalo
+// Si ya hay un tema guardado, úsalo; si no, forzar dark como predeterminado
 if (sessionStorage.getItem("theme")) {
-    $HTML.dataset.theme = sessionStorage.getItem("theme");
+  $HTML.dataset.theme = sessionStorage.getItem("theme");
 } else {
-    // Si no hay un tema guardado, usa la preferencia del sistema
-    $HTML.dataset.theme = isDark ? "dark" : "light";
-    sessionStorage.setItem("theme", $HTML.dataset.theme);
+  $HTML.dataset.theme = "dark";
+  sessionStorage.setItem("theme", "dark");
 }
+
 
 // Función para cambiar el tema
 const changeTheme = () => {

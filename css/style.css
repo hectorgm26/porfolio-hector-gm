@@ -1009,6 +1009,11 @@ body {
   color: #222;
 }
 
+.highlight-career {
+  color: #C77800;
+  font-weight: var(--weight-medium);
+}
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES

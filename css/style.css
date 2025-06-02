@@ -922,14 +922,12 @@ body {
         background-color: #f9d342;
         color: #222;
         box-shadow: 0 2px 4px rgba(249, 211, 66, 0.5);
-        border: none;
     }
 
     .btn-yellow:hover,
     .btn-yellow:focus {
         background-color: #e6c72a;
         box-shadow: 0 3px 8px rgba(230, 199, 42, 0.7);
-        border: none;
     }
 }
 

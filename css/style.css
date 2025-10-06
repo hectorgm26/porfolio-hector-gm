@@ -430,14 +430,19 @@ body {
 /**
  * CARD
  */
+
 .card{
   background-color: var(--surface-container-low);
   border-radius: var(--shape-corner-medium);
   padding: 16px;
   display: grid;
   gap: 16px;
-  --state-layer-bg: var(var(--on-surface))
-  
+  --state-layer-bg: var(var(--on-surface));
+}
+
+/* Borde negro en modo claro */
+[data-theme="light"] .card {
+  border: 2px solid black;
 }
 
 .card-banner{
@@ -558,6 +563,11 @@ body {
   padding: 16px;
   margin-block-start: 24px;
   border-radius: 16px;
+}
+
+/* Borde negro en modo claro */
+[data-theme="light"] .about-card {
+  border: 2px solid black;
 }
 
 .about-card .card-title { color: var(--on-surface);}

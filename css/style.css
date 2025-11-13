@@ -685,7 +685,7 @@ body {
 .tech-icons .icon {
   width: 60px;
   height: 60px;
-  padding: 4px;
+  padding: 5px;
   transition: transform 0.2s ease, border-color 0.3s ease;
   border: 2px solid black; /* borde negro en modo claro */
   border-radius: 16px;
@@ -953,6 +953,7 @@ body {
   border: 2px solid black; /* borde negro en modo claro */
   border-radius: 18px;
   transition: border-color 0.3s ease;
+  padding: 4px;
 }
 
 /* Iconos borde blanco en modo oscuro por atributo */

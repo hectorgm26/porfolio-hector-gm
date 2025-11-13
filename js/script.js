@@ -61,6 +61,3 @@ $tabBtn.forEach(item => {
     });
 });
 
-
-
-

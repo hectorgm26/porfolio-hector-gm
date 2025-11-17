@@ -1134,8 +1134,8 @@ body {
   
 }
 
-/* --- MOBILE FIX (3 ICONOS POR FILA + CENTRADO) --- */
-@media (max-width: 600px) {
+/* --- MOBILE FIX (3 ICONOS POR FILA en celulares reales, incluidos Xiaomi Poco X3) --- */
+@media (max-width: 720px) {
 
   /* Centrar títulos de categorías */
   .tech-category-title,
@@ -1156,7 +1156,7 @@ body {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 14px;
-    justify-items: center;   /* Centra iconos en sus columnas */
+    justify-items: center;
     align-items: center;
     width: 100%;
   }
@@ -1192,6 +1192,7 @@ body {
     width: 100%;
   }
 }
+
 
 /* --- FIX: no afectar los iconos de las tarjetas --- */
 @media (max-width: 600px) {

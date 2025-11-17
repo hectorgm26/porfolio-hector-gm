@@ -648,6 +648,8 @@ body {
   height: 28px;
 }
 
+/* === TUS ESTILOS ORIGINALES, SIN CAMBIAR NADA === */
+
 .skill-category {
   background-color: #f9f9f9; /* fondo claro por defecto */
   border-radius: 10px;
@@ -697,6 +699,62 @@ body {
 
 [data-theme="dark"] .tech-icons .icon {
   border-color: white; /* borde blanco en modo oscuro */
+}
+
+
+/* === ESTILOS NUEVOS PARA TEXTO BAJO ICONOS === */
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+
+.tech-label {
+  margin-top: 8px;
+  font-size: 1.3rem; 
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+[data-theme="dark"] .tech-label {
+  color: white;
+}
+
+
+/* === SISTEMA AUTOMÁTICO PARA ALTERNAR COLUMNAS === */
+/* 1º contenedor → 2 columnas */
+/* 2º contenedor → 4 columnas */
+/* 3º → 2 columnas */
+/* 4º → 4 columnas */
+/* … y así sucesivamente */
+
+.skill-category:nth-of-type(odd) .tech-icons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.skill-category:nth-of-type(even) .tech-icons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skill-category:nth-of-type(even) .tech-icons {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-category:nth-of-type(odd) .tech-icons,
+  .skill-category:nth-of-type(even) .tech-icons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 
@@ -1075,3 +1133,99 @@ body {
   }
   
 }
+
+/* --- MOBILE FIX (3 ICONOS POR FILA + CENTRADO) --- */
+@media (max-width: 600px) {
+
+  /* Centrar títulos de categorías */
+  .tech-category-title,
+  .category-title,
+  .tech-section-title {
+    text-align: center !important;
+    width: 100%;
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  /* Contenedor general de iconos → GRID de 3 columnas */
+  .tech-icons,
+  .tech-grid,
+  .tech-list,
+  .tech-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px;
+    justify-items: center;   /* Centra iconos en sus columnas */
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Cada ítem centrado */
+  .tech-item,
+  .icon__tec {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+
+  /* Iconos */
+  .icon__tec img,
+  .tech-icons .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 14px;
+  }
+
+  /* Nombre debajo */
+  .tech-label,
+  .icon-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* --- FIX: no afectar los iconos de las tarjetas --- */
+@media (max-width: 600px) {
+  
+  /* Restaurar el comportamiento original de iconos dentro de las tarjetas */
+  .card .icon__tec {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .card .icon__tec img {
+    width: 45px;     /* tamaño equilibrado para móvil */
+    height: 45px;
+    margin: 0;
+    border-radius: 12px;
+  }
+}
+
+.card-banner {
+  width: 100%;
+  height: 280px; /* un poco más alta para darle más “aire” */
+  overflow: hidden;
+  border-radius: 14px; /* un poquito más suave */
+}
+
+.card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* se recorta uniformemente */
+  object-position: center;
+  display: block;
+}
+

@@ -1,856 +1,1283 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Hector Gonzalez Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--------------------- TITLE WEB--------------------->
-    <title> Welcome to Hector Gonzalez Portfolio </title>
+    <meta
+      name="description"
+      content="Portafolio de Héctor González Mora - Programador en formación desde Chile. egresado de Derecho, apasionado por resolver problemas, aprender nuevas tecnologías y encontrar bugs."
+    />
 
-    <!-- DESCRIPCIÓN PARA SEO -->
-    <meta name="description"
-        content="Portafolio de Héctor González Mora - Programador en formación desde Chile. egresado de Derecho, apasionado por resolver problemas, aprender nuevas tecnologías y encontrar bugs.">
+    <meta name="author" content="Héctor González Mora" />
 
-    <!-- AUTOR -->
-    <meta name="author" content="Héctor González Mora">
+    <meta
+      name="keywords"
+      content="Héctor González, portafolio, programador, desarrollador web, Chile, estudiante programación, QA testing, Java, Python, HTML, CSS, JavaScript"
+    />
 
-    <!-- PALABRAS CLAVE PARA SEO -->
-    <meta name="keywords"
-        content="Héctor González, portafolio, programador, desarrollador web, Chile, estudiante programación, QA testing, Java, Python, HTML, CSS, JavaScript">
-
-    <!-- META OPEN GRAPH (Para compartir en redes sociales) -->
     <meta property="og:title" content="Portafolio | Héctor González" />
-    <meta property="og:description"
-        content="Programador en formación desde Chile. Mira mis proyectos, habilidades y cómo contactarme." />
-    <meta property="og:image"
-        content="https://hectorgm26.github.io/porfolio-hector-gm/assets/images/avatar-lentes.jpg" />
-    <meta property="og:url" content="https://hectorgm26.github.io/porfolio-hector-gm/" />
+    <meta
+      property="og:description"
+      content="Programador en formación desde Chile. Mira mis proyectos, habilidades y cómo contactarme."
+    />
+    <meta
+      property="og:image"
+      content="https://hectorgm26.github.io/porfolio-hector-gm/assets/images/avatar-lentes.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://hectorgm26.github.io/porfolio-hector-gm/"
+    />
     <meta property="og:type" content="website" />
 
-    <!--------------------- LINK FAVICON --------------------->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
-    <!--------------------- LINK GOOGLE FONT --------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet">
-    <!--------------------- LINK MATERIAL ICON --------------------->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Para forzar que por defecto se vea la web en modo oscuro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
     <script>
-        (function () {
-            const theme = sessionStorage.getItem("theme") || "dark";
-            document.documentElement.setAttribute("data-theme", theme);
-        })();
+      (function () {
+        const theme = sessionStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
     </script>
-    <!--------------------- LINK CSS FILES--------------------->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
 
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-    <!--------------------- HEADER --------------------->
+  <body>
     <header class="topbar">
-        <a href="#" class="logo" style="visibility: hidden; pointer-events: none;">
-            <!-- logo eliminado visualmente, pero sigue ocupando espacio -->
-        </a>
+      <a
+        href="#"
+        class="logo"
+        style="visibility: hidden; pointer-events: none"
+      ></a>
 
-        <button class="icon-btn theme-btn" data-theme-btn>
-            <span class="material-symbols-outlined dark icon" aria-hidden="true"> dark_mode </span>
-            <span class="material-symbols-outlined light icon" aria-hidden="true"> light_mode </span>
-        </button>
+      <button class="icon-btn theme-btn" data-theme-btn>
+        <span class="material-symbols-outlined dark icon" aria-hidden="true">
+          dark_mode
+        </span>
+        <span class="material-symbols-outlined light icon" aria-hidden="true">
+          light_mode
+        </span>
+      </button>
     </header>
 
-
-    <!--------------------- MAIN --------------------->
     <main>
-        <article>
-            <!--====== #HERO ======-->
+      <article>
+        <section class="section hero">
+          <div class="container">
+            <figure
+              class="hero-banner img-holder"
+              style="--width: 240; --height: 240"
+            >
+              <img
+                src="./assets/images/profile.png"
+                alt="Hector Gonzalez | Programador en formación"
+                class="img-cover"
+              />
+            </figure>
 
-            <section class="section hero">
+            <div class="hero-content">
+              <span
+                class="label-large section-subtitle"
+                style="color: #c77800; font-weight: var(--weight-medium)"
+                >Programador en formación</span
+              >
 
-                <div class="container">
-                    <!--====== #HERO-IMG -> PHOTO PROFILE ======-->
-                    <figure class="hero-banner img-holder" style="--width: 240; --height: 240;">
-                        <img src="./assets/images/profile.png" alt="Hector Gonzalez | Programador en formación"
-                            class="img-cover">
+              <h1 class="display-small">Héctor González Mora</h1>
+
+              <p
+                class="body-large section-text"
+                style="display: inline-flex; align-items: center"
+              >
+                desde Chile ✨
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/32px-Flag_of_Chile.svg.png"
+                  alt="Bandera de Chile"
+                  style="width: 24px; height: auto; margin-left: 4px"
+                />
+              </p>
+
+              <div class="btn-wrapper">
+                <a href="mailto:hhector.agm@gmail.com" class="chip">
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    Email
+                  </span>
+                  <span class="label-large">hhector.agm@gmail.com</span>
+                  <div class="state-layer"></div>
+                </a>
+
+                <a href="tel:+56961130515" class="chip">
+                  <span class="material-symbols-outlined"> call </span>
+                  <span class="label-large">+569 61130515</span>
+                  <div class="state-layer"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="article">
+          <div class="about-card">
+            <h2 class="card-title title-medium">Sobre Mí</h2>
+
+            <p class="body-medium card-text">
+              ¡Hola! Soy Héctor, egresado de Derecho, reconvertido al mundo TI.
+              Actualmente soy estudiante de
+              <span class="highlight-career"
+                >Técnico en Programación (2º año) y estoy próximo a
+                egresar.</span
+              >
+              Me apasiona resolver problemas y aprender nuevas tecnologías.
+              <span class="highlight-career"
+                >Busco mi primera oportunidad en el sector informático.</span
+              >
+              Soy curioso, autodidacta, perseverante y me gusta trabajar en
+              equipo.
+            </p>
+
+            <ul class="about-list">
+              <li class="list-item">
+                <a
+                  href="https://www.linkedin.com/in/hectoryefc/"
+                  target="_blank"
+                  class="link__web"
+                >
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    business_center
+                  </span>
+                  <span class="label-medium">LinkedIn</span>
+                </a>
+              </li>
+
+              <li class="list-item">
+                <a
+                  href="https://github.com/hectorgm26"
+                  target="_blank"
+                  class="link__web"
+                >
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    terminal
+                  </span>
+                  <span class="label-medium">GitHub</span>
+                </a>
+              </li>
+
+              <li class="btn-cv-container">
+                <a
+                  href="assets/docs/1.CV_HectorGonzalez.pdf"
+                  download
+                  class="btn btn-cv"
+                  >Descargar Curriculum</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <!-- PRYMARY  TABS -->
+            <div class="primary-tabs">
+              <button class="tab-btn active" data-tab-btn="proyect">
+                <span class="tab-text title-small">Mis Proyectos</span>
+
+                <div class="state-layer"></div>
+              </button>
+
+              <button class="tab-btn" data-tab-btn="skills">
+                <span class="tab-text title-small">Mis Skills</span>
+
+                <div class="state-layer"></div>
+              </button>
+
+              <button class="tab-btn" data-tab-btn="resume">
+                <span class="tab-text title-small"
+                  >Formación y Experiencia</span
+                >
+
+                <div class="state-layer"></div>
+              </button>
+            </div>
+
+            <!-- PROYECTS -->
+            <section
+              class="section tab-content active"
+              data-tab-content="proyect"
+            >
+              <div class="container">
+                <div class="proyect-list">
+                  <!-- Clasificación Ligas - Ionic + Angular -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/futbol.png"
+                        alt="Clasificación Ligas App - Ionic + Angular"
+                        class="img-cover"
+                      />
                     </figure>
-
-                    <!--====== GENERAL DATA PROFILE ======-->
-                    <div class="hero-content">
-                        <!--====== PROFESSION ======-->
-                        <span class="label-large section-subtitle"
-                            style="color: #C77800; font-weight: var(--weight-medium)">Programador en formación</span>
-                        <!--====== NAME ======-->
-                        <h1 class="display-small">Héctor González Mora</h1>
-                        <!--====== DESCRIPTION PROFILE ======-->
-                        <p class="body-large section-text" style="display: inline-flex; align-items: center;">
-                            desde Chile ✨
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/32px-Flag_of_Chile.svg.png"
-                                alt="Bandera de Chile" style="width: 24px; height: auto; margin-left: 4px;">
-                        </p>
-                        <!--====== DATA PROFILE SECONDARY ======-->
-                        <div class="btn-wrapper">
-                            <!--====== EMAIL DATA ======-->
-                            <a href="mailto:hhector.agm@gmail.com" class="chip">
-                                <!--====== ICON EMAIL ======-->
-                                <span class="material-symbols-outlined" aria-hidden="true"> Email </span>
-                                <!--====== EMAIL ======-->
-                                <span class="label-large">hhector.agm@gmail.com</span>
-
-                                <!-- <div class="state-layer-gb">
-                            </a>
-
-                            <!--====== PHONE DATA ======-->
-                                <a href="tel:+56961130515" class="chip">
-                                    <span class="material-symbols-outlined"> call </span>
-                                    <span class="label-large">+569 61130515</span>
-
-                                    <div class="state-layer"></div>
-                                </a>
-                        </div>
-
+                    <div class="card-content">
+                      <span class="label-large card-subtitle"
+                        >Aplicación Móvil</span
+                      >
+                      <h3 class="title-large card-title">
+                        Clasificación Ligas App
+                      </h3>
+                      <p class="project-description">
+                        Aplicación móvil híbrida con Ionic y Angular que muestra
+                        clasificaciones en tiempo real de las principales ligas
+                        europeas. Incluye posiciones, últimos resultados,
+                        estadísticas por equipo y selección de temporadas
+                        históricas.
+                      </p>
                     </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
+                        alt="TypeScript"
+                        title="TypeScript"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png"
+                        alt="Angular"
+                        title="Angular"
+                      />
+                      <img
+                        src="https://www.svgrepo.com/show/353912/ionic-icon.svg"
+                        alt="Ionic Logo"
+                        title="Ionic"
+                      />
+                      <img
+                        src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg"
+                        alt="Capacitor Logo"
+                        title="Capacitor"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/futbol-ligas-app"
+                        target="_blank"
+                        class="btn btn-yellow"
+                      >
+                        Repositorio Github
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 2) NestJS - Recetario -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/recetas-nest.png"
+                        alt="Recetario API - NestJS"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">API REST</span>
+                      <h3 class="title-large card-title">Recetario API</h3>
+                      <p class="project-description">
+                        API REST desarrollada con NestJS y Prisma ORM para
+                        gestionar recetas, categorías y usuarios. Incluye
+                        autenticación JWT, carga de imágenes, validaciones con
+                        DTOs, envío de correos y documentación con Swagger.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
+                        alt="TypeScript"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/nest_js.png"
+                        alt="NestJS"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"
+                        alt="swagger-logo"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/recetario-api-nestjs"
+                        target="_blank"
+                        class="btn btn-yellow"
+                      >
+                        Repositorio Github
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 3) Laravel - Ecommerce -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/ecommerce.jpg"
+                        alt="Ecommerce Laravel Shop System"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">Full Stack</span>
+                      <h3 class="title-large card-title">
+                        Ecommerce Laravel Shop System
+                      </h3>
+                      <p class="project-description">
+                        Sistema de ecommerce completo con Laravel 12, con panel
+                        administrativo en AdminLTE 4, carrito de compras,
+                        gestión de usuarios con roles/permisos y funciones
+                        esenciales de una tienda online moderna.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png"
+                        alt="PHP"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png"
+                        alt="Laravel"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png"
+                        alt="Bootstrap"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/ecommerce-laravel-shop-system"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 3) Laravel - Codegram -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/codegram.jpg"
+                        alt="Codegram - Clon de Instagram"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">Full Stack</span>
+                      <h3 class="title-large card-title">
+                        Codegram - Clon de Instagram
+                      </h3>
+                      <p class="project-description">
+                        Clon funcional de Instagram creado con Laravel 12 y
+                        Livewire, que implementa registro, login, publicación de
+                        fotos, comentarios, likes, seguidores y gestión de
+                        perfiles.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png"
+                        alt="PHP"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png"
+                        alt="Laravel"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png"
+                        alt="Tailwind CSS"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/codegram-laravel"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 3) Laravel - Larateca -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/larateca.PNG"
+                        alt="Larateca"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">Full Stack</span>
+                      <h3 class="title-large card-title">Larateca</h3>
+                      <p class="project-description">
+                        Plataforma creada con Laravel 10 y Breeze para reseñar
+                        libros. Permite registro, autenticación, calificación
+                        con estrellas y publicación de reseñas. Los
+                        administradores pueden aprobar contenido antes de
+                        hacerlo público.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png"
+                        alt="PHP"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png"
+                        alt="Laravel"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/larateca-reviews"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 4) Spring Boot - ForoHub -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="https://images.unsplash.com/photo-1517650862521-d580d5348145?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Foro Hub"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">API REST</span>
+                      <h3 class="title-large card-title">Foro Hub</h3>
+                      <p class="project-description">
+                        API REST en Java + Spring Boot para gestionar tópicos y
+                        posteos en un sistema tipo foro. Implementa
+                        autenticación JWT, control de acceso con Spring Security
+                        y CRUD de temas y usuarios.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png"
+                        alt="Java"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png"
+                        alt="SpringBoot"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/challenge-final-alura-forohub"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 4) Spring Boot - ScreenMatch -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="https://images.unsplash.com/photo-1537884944318-390069bb8665?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="ScreenMatch Series Manager"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle"
+                        >Aplicación de consola</span
+                      >
+                      <h3 class="title-large card-title">
+                        ScreenMatch Series Manager
+                      </h3>
+                      <p class="project-description">
+                        plicación de consola en Java que utiliza Spring Boot
+                        para buscar y organizar información de series y
+                        episodios, consultando datos actualizados desde la API
+                        pública de OMDb.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png"
+                        alt="Java"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png"
+                        alt="SpringBoot"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=postgres&theme=light"
+                        alt="PostgreSQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/project-screen-match"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 4) Spring Boot - Literalura -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="LiterAlura"
+                        loading="lazy"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle"
+                        >Aplicación de consola</span
+                      >
+                      <h3 class="title-large card-title">LiterAlura</h3>
+                      <p class="project-description">
+                        Catálogo interactivo de libros en Java con Spring Boot.
+                        Permite buscar y registrar libros y autores, integrando
+                        API pública para obtener información en tiempo real.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png"
+                        alt="Java"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png"
+                        alt="SpringBoot"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=postgres&theme=light"
+                        alt="PostgreSQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/challenge-Literalura-one"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 1) Angular/Ionic - Pokedex -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/pokedex.png"
+                        alt="Pokedex App - Ionic + Angular"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle"
+                        >Aplicación Móvil</span
+                      >
+                      <h3 class="title-large card-title">Pokedex Ionic App</h3>
+                      <p class="project-description">
+                        Aplicación híbrida con Ionic y Angular que consume la
+                        PokéAPI para mostrar Pokémon con scroll infinito,
+                        buscador por nombre y vista detallada con estadísticas
+                        individuales.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
+                        alt="TypeScript"
+                        title="TypeScript"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png"
+                        alt="Angular"
+                        title="Angular"
+                      />
+                      <img
+                        src="https://www.svgrepo.com/show/353912/ionic-icon.svg"
+                        alt="Ionic Logo"
+                        title="Ionic"
+                      />
+                      <img
+                        src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg"
+                        alt="Capacitor Logo"
+                        title="Capacitor"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/ionic-pokedex"
+                        target="_blank"
+                        class="btn btn-yellow"
+                      >
+                        Repositorio Github
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 5) TaskList (Ionic) -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/task-ionic.png"
+                        alt="TaskList - Lista de Tareas Ionic + Angular"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle"
+                        >Aplicación Móvil</span
+                      >
+                      <h3 class="title-large card-title">
+                        TaskList - Lista de Tareas
+                      </h3>
+                      <p class="project-description">
+                        App híbrida de tareas desarrollada con Ionic y Angular.
+                        Permite agregar, editar, eliminar y reordenar tareas,
+                        con persistencia automática mediante Capacitor.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
+                        alt="TypeScript"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png"
+                        alt="Angular"
+                      />
+                      <img
+                        src="https://www.svgrepo.com/show/353912/ionic-icon.svg"
+                        alt="Ionic"
+                      />
+                      <img
+                        src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg"
+                        alt="Capacitor"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/app-task-list-ionic"
+                        target="_blank"
+                        class="btn btn-yellow"
+                      >
+                        Repositorio Github
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 6) Tejelanas Vivi -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/tejelanas.PNG"
+                        alt="Backend Tejelanas Vivi"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">API REST</span>
+                      <h3 class="title-large card-title">
+                        Tejelanas Vivi API – Backend REST en PHP con Swagger
+                      </h3>
+                      <p class="project-description">
+                        API REST en PHP nativo para la gestión de inventario y
+                        productos del emprendimiento Tejelanas Vivi. Implementa
+                        CRUD completo y documentación interactiva con Swagger.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png"
+                        alt="PHP"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"
+                        alt="swagger-logo"
+                      />
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/backend-php-tejelanas-vivi"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 6) Karate API Testing -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/karate.PNG"
+                        alt="Karate API Testing Suite"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle">QA Testing</span>
+                      <h3 class="title-large card-title">
+                        Karate API Testing Suite
+                      </h3>
+                      <p class="project-description">
+                        Suite de testing automatizado para APIs con Karate
+                        Framework. Valida métodos HTTP, estructuras de
+                        respuesta, tiempos de ejecución y flujos completos.
+                        Genera reportes HTML con Thymeleaf.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png"
+                        alt="Java"
+                      />
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cucumber.png"
+                        alt="Gherkin"
+                      />
+                      <img
+                        src="https://karatelabs.github.io/resources/logo-dark.svg"
+                        alt="KarateLabs Logo"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/karate-api-testing-suite"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- 6) Conversor de monedas -->
+                  <div class="card">
+                    <figure class="card-banner img-holder">
+                      <img
+                        src="./assets/images/projects/monedasconversor.PNG"
+                        alt="Conversor de Monedas"
+                        class="img-cover"
+                      />
+                    </figure>
+                    <div class="card-content">
+                      <span class="label-large card-subtitle"
+                        >Aplicación de consola</span
+                      >
+                      <h3 class="title-large card-title">
+                        Conversor de monedas
+                      </h3>
+                      <p class="project-description">
+                        Aplicación de consola en Java que permite convertir
+                        divisas en tiempo real, consultando valores actualizados
+                        desde una API externa.
+                      </p>
+                    </div>
+                    <div class="icon__tec">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png"
+                        alt="Java"
+                      />
+                    </div>
+                    <div class="project-buttons">
+                      <a
+                        href="https://github.com/hectorgm26/conversor-monedas"
+                        target="_blank"
+                        class="btn btn-yellow"
+                        >Repositorio Github</a
+                      >
+                    </div>
+                  </div>
                 </div>
+              </div>
             </section>
 
-
-            <!--====== #MAIN CONTENT ======-->
-            <div class="article">
-                <div class="about-card">
-                    <h2 class="card-title title-medium">Sobre Mí</h2>
-
-                    <p class="body-medium card-text">
-                        ¡Hola! Soy Héctor, egresado de Derecho, reconvertido al mundo TI. Actualmente soy estudiante de
-                        <span class="highlight-career">Técnico en Programación (2º año) y estoy próximo a egresar.</span> Me apasiona resolver
-                        problemas y aprender nuevas tecnologías. <span class="highlight-career">Busco mi
-                            primera oportunidad en el sector informático.</span> Soy curioso, autodidacta, perseverante
-                        y me gusta trabajar en equipo.
+            <!-- RESUME -->
+            <section
+              class="section tab-content resume-tab"
+              data-tab-content="resume"
+            >
+              <div class="container">
+                <h2 class="section-title title-small">Educación</h2>
+                <div class="timeline">
+                  <div class="timeline-container">
+                    <h3 class="body-large">
+                      Instituto Profesional San Sebastián (ex IP CIISA)
+                    </h3>
+                    <p class="label-medium timeline-date">2024 al presente</p>
+                    <p class="body-medium">
+                      Estudiante de segundo año de la carrera de Técnico en
+                      Programación y Análisis de sistemas.
                     </p>
+                  </div>
 
+                  <div class="timeline-container">
+                    <h3 class="body-large">
+                      Alura Latam (Oracle Next Education)
+                    </h3>
+                    <p class="label-medium timeline-date">
+                      2024-2025 (Finalizado)
+                    </p>
+                    <p class="body-medium">
+                      Graduado del programa ONE de Oracle, con formación online
+                      en habilidades blandas, lógica de programación y backend.
+                    </p>
+                  </div>
 
-
-                    <ul class="about-list">
-
-                        <li class="list-item">
-                            <a href="https://www.linkedin.com/in/hectoryefc/" target="_blank" class="link__web">
-                                <span class="material-symbols-outlined" aria-hidden="true"> business_center </span>
-                                <span class="label-medium">LinkedIn</span>
-                            </a>
-                        </li>
-
-                        <li class="list-item">
-                            <a href="https://github.com/hectorgm26" target="_blank" class="link__web">
-                                <span class="material-symbols-outlined" aria-hidden="true"> terminal </span>
-                                <span class="label-medium">GitHub</span>
-                            </a>
-                        </li>
-
-                        <li class="btn-cv-container">
-                            <a href="assets/docs/1.CV_HectorGonzalez.pdf" download
-                                class="btn btn-cv">Descargar Curriculum</a>
-                        </li>
-
-                    </ul>
-
-
+                  <div class="timeline-container">
+                    <h3 class="body-large">Universidad Alberto Hurtado</h3>
+                    <p class="label-medium timeline-date">
+                      2016 — 2022 (Finalizado)
+                    </p>
+                    <p class="body-medium">
+                      Egresado de la carrera de Derecho.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                    <!-- PRYMARY  TABS -->
-                    <div class="primary-tabs">
+                <br />
+                <hr />
+                <br />
 
-                        <button class="tab-btn active" data-tab-btn="proyect">
-                            <span class="tab-text title-small">Mis Proyectos</span>
+                <h2 class="section-title title-small">Experiencia laboral</h2>
+                <div class="timeline">
+                  <div class="timeline-container">
+                    <h3 class="body-large">
+                      Procurador Judicial - Clínica Jurídica de Transparencia y
+                      DD.HH. (Universidad Alberto Hurtado)
+                    </h3>
+                    <p class="label-medium timeline-date">
+                      Marzo 2021 — Abril 2022
+                    </p>
+                    <p class="body-medium">
+                      Encargado de la gestión y monitoreo de causas judiciales
+                      relacionadas con violaciones graves a los derechos
+                      humanos, incluyendo interposición de acciones de amparo.
+                    </p>
+                  </div>
 
-                            <div class="state-layer"></div>
-                        </button>
-
-                        <button class="tab-btn" data-tab-btn="skills">
-                            <span class="tab-text title-small">Mis Skills</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-
-                        <button class="tab-btn" data-tab-btn="resume">
-                            <span class="tab-text title-small">Formación y Experiencia</span>
-
-                            <div class="state-layer"></div>
-                        </button>
-
-                    </div>
-
-                    <!-- PROYECTS -->
-                    <section class="section tab-content active" data-tab-content="proyect">
-                        <div class="container">
-                            <div class="proyect-list">
-
-                                <!-- Clasificación Ligas - Ionic + Angular -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/futbol.png" 
-                                            alt="Clasificación Ligas App - Ionic + Angular" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Aplicación Móvil</span>
-                                        <h3 class="title-large card-title">Clasificación Ligas App</h3>
-                                        <p class="project-description">
-                                            Aplicación móvil híbrida con Ionic y Angular que muestra clasificaciones en tiempo real de las principales ligas europeas. Incluye posiciones, últimos resultados, estadísticas por equipo y selección de temporadas históricas.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" title="TypeScript" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png" alt="Angular" title="Angular" />
-                                        <img src="https://www.svgrepo.com/show/353912/ionic-icon.svg" alt="Ionic Logo" title="Ionic" />
-                                        <img src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg" alt="Capacitor Logo" title="Capacitor" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/futbol-ligas-app" target="_blank" class="btn btn-yellow">
-                                            Repositorio Github
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Coupons App - Ionic + Angular -->
-                                    <div class="card">
-                                        <figure class="card-banner img-holder">
-                                            <img src="./assets/images/projects/cupones.jpg" 
-                                                alt="Coupons App - Ionic + Angular" class="img-cover">
-                                        </figure>
-                                        <div class="card-content">
-                                            <span class="label-large card-subtitle">Aplicación Móvil</span>
-                                            <h3 class="title-large card-title">Coupons App</h3>
-                                            <p class="project-description">
-                                                App híbrida con Ionic, Angular y Capacitor para gestionar cupones por categoría. Permite activar/desactivar cupones, generar y escanear QR, validar canjes y guardar datos localmente con Capacitor Preferences.
-                                            </p>
-                                        </div>
-                                        <div class="icon__tec">
-                                            <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" title="TypeScript" />
-                                            <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png" alt="Angular" title="Angular" />
-                                            <img src="https://www.svgrepo.com/show/353912/ionic-icon.svg" alt="Ionic Logo" title="Ionic" />
-                                            <img src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg" alt="Capacitor Logo" title="Capacitor" />
-                                        </div>
-                                        <div class="project-buttons">
-                                            <a href="https://github.com/hectorgm26/cupones-qr-ionic-app/tree/main" target="_blank" class="btn btn-yellow">
-                                                Repositorio Github
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                <!-- 2) NestJS - Recetario -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/recetas-nest.png" 
-                                            alt="Recetario API - NestJS" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">API REST</span>
-                                        <h3 class="title-large card-title">Recetario API</h3>
-                                        <p class="project-description">
-                                            API REST desarrollada con NestJS y Prisma ORM para gestionar recetas, categorías y usuarios. Incluye autenticación JWT, carga de imágenes, validaciones con DTOs, envío de correos y documentación con Swagger.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/nest_js.png" alt="NestJS" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="swagger-logo">
-                                        <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/recetario-api-nestjs" target="_blank" class="btn btn-yellow">
-                                            Repositorio Github
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 3) Laravel - Ecommerce -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/ecommerce.jpg"
-                                            alt="Ecommerce Laravel Shop System" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Full Stack</span>
-                                        <h3 class="title-large card-title">Ecommerce Laravel Shop System</h3>
-                                        <p class="project-description">
-                                            Sistema de ecommerce completo con Laravel 12, con panel administrativo en AdminLTE 4, carrito de compras, gestión de usuarios con roles/permisos y funciones esenciales de una tienda online moderna.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png" alt="PHP" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png" alt="Laravel" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png" alt="Bootstrap" />
-                                        <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/ecommerce-laravel-shop-system"
-                                            target="_blank" class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 3) Laravel - Codegram -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/codegram.jpg"
-                                            alt="Codegram - Clon de Instagram" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Full Stack</span>
-                                        <h3 class="title-large card-title">Codegram - Clon de Instagram</h3>
-                                        <p class="project-description">
-                                            Clon funcional de Instagram creado con Laravel 12 y Livewire, que implementa registro, login, publicación de fotos, comentarios, likes, seguidores y gestión de perfiles.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png" alt="PHP" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png" alt="Laravel" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" />
-                                        <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/codegram-laravel" target="_blank"
-                                            class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 3) Laravel - Larateca -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/larateca.PNG" alt="Larateca"
-                                            class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Full Stack</span>
-                                        <h3 class="title-large card-title">Larateca</h3>
-                                        <p class="project-description">
-                                            Plataforma creada con Laravel 10 y Breeze para reseñar libros. Permite registro, autenticación, calificación con estrellas y publicación de reseñas. Los administradores pueden aprobar contenido antes de hacerlo público.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png" alt="PHP" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png" alt="Laravel" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" />
-                                        <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/larateca-reviews" target="_blank"
-                                            class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 4) Spring Boot - ForoHub -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="https://images.unsplash.com/photo-1517650862521-d580d5348145?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                            alt="Foro Hub" loading="lazy" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">API REST</span>
-                                        <h3 class="title-large card-title">Foro Hub</h3>
-                                        <p class="project-description">
-                                            API REST en Java + Spring Boot para gestionar tópicos y posteos en un sistema tipo foro. Implementa autenticación JWT, control de acceso con Spring Security y CRUD de temas y usuarios.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png" alt="Java" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png" alt="SpringBoot" />
-                                        <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/challenge-final-alura-forohub"
-                                            target="_blank" class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 4) Spring Boot - ScreenMatch -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                            alt="ScreenMatch Series Manager" loading="lazy" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Aplicación de consola</span>
-                                        <h3 class="title-large card-title">ScreenMatch Series Manager</h3>
-                                        <p class="project-description">
-                                            plicación de consola en Java que utiliza Spring Boot para buscar y organizar información de series y episodios, consultando datos actualizados desde la API pública de OMDb.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png" alt="Java" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png" alt="SpringBoot" />
-                                        <img src="https://skillicons.dev/icons?i=postgres&theme=light" alt="PostgreSQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/project-screen-match" target="_blank"
-                                            class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 4) Spring Boot - Literalura -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                            alt="LiterAlura" loading="lazy" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Aplicación de consola</span>
-                                        <h3 class="title-large card-title">LiterAlura</h3>
-                                        <p class="project-description">
-                                            Catálogo interactivo de libros en Java con Spring Boot. Permite buscar y registrar libros y autores, integrando API pública para obtener información en tiempo real.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png" alt="Java" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png" alt="SpringBoot" />
-                                        <img src="https://skillicons.dev/icons?i=postgres&theme=light" alt="PostgreSQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/challenge-Literalura-one" target="_blank"
-                                            class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 1) Angular/Ionic - Pokedex -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/pokedex.png" 
-                                            alt="Pokedex App - Ionic + Angular" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Aplicación Móvil</span>
-                                        <h3 class="title-large card-title">Pokedex Ionic App</h3>
-                                        <p class="project-description">
-                                            Aplicación híbrida con Ionic y Angular que consume la PokéAPI para mostrar Pokémon con scroll infinito, buscador por nombre y vista detallada con estadísticas individuales.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" title="TypeScript" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png" alt="Angular" title="Angular" />
-                                        <img src="https://www.svgrepo.com/show/353912/ionic-icon.svg" alt="Ionic Logo" title="Ionic" />
-                                        <img src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg" alt="Capacitor Logo" title="Capacitor" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/ionic-pokedex" target="_blank" class="btn btn-yellow">
-                                            Repositorio Github
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 5) TaskList (Ionic) -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/task-ionic.png" 
-                                            alt="TaskList - Lista de Tareas Ionic + Angular" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Aplicación Móvil</span>
-                                        <h3 class="title-large card-title">TaskList - Lista de Tareas</h3>
-                                        <p class="project-description">
-                                            App híbrida de tareas desarrollada con Ionic y Angular. Permite agregar, editar, eliminar y reordenar tareas, con persistencia automática mediante Capacitor.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png" alt="Angular" />
-                                        <img src="https://www.svgrepo.com/show/353912/ionic-icon.svg" alt="Ionic" />
-                                        <img src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg" alt="Capacitor" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/app-task-list-ionic" target="_blank" class="btn btn-yellow">
-                                            Repositorio Github
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- 6) Tejelanas Vivi -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/tejelanas.PNG" alt="Backend Tejelanas Vivi"
-                                            class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">API REST</span>
-                                        <h3 class="title-large card-title">Tejelanas Vivi API – Backend REST en PHP con
-                                            Swagger</h3>
-                                        <p class="project-description">
-                                            API REST en PHP nativo para la gestión de inventario y productos del emprendimiento Tejelanas Vivi. Implementa CRUD completo y documentación interactiva con Swagger.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png" alt="PHP" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="swagger-logo">
-                                        <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/backend-php-tejelanas-vivi"
-                                            target="_blank" class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 6) Karate API Testing -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/karate.PNG" alt="Karate API Testing Suite"
-                                            class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">QA Testing</span>
-                                        <h3 class="title-large card-title">Karate API Testing Suite</h3>
-                                        <p class="project-description">
-                                            Suite de testing automatizado para APIs con Karate Framework. Valida métodos HTTP, estructuras de respuesta, tiempos de ejecución y flujos completos. Genera reportes HTML con Thymeleaf.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png" alt="Java" />
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cucumber.png" alt="Gherkin" />
-                                        <img src="https://karatelabs.github.io/resources/logo-dark.svg"
-                                            alt="KarateLabs Logo" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/karate-api-testing-suite" target="_blank"
-                                            class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                                <!-- 6) Conversor de monedas -->
-                                <div class="card">
-                                    <figure class="card-banner img-holder">
-                                        <img src="./assets/images/projects/monedasconversor.PNG"
-                                            alt="Conversor de Monedas" class="img-cover">
-                                    </figure>
-                                    <div class="card-content">
-                                        <span class="label-large card-subtitle">Aplicación de consola</span>
-                                        <h3 class="title-large card-title">Conversor de monedas</h3>
-                                        <p class="project-description">
-                                            Aplicación de consola en Java que permite convertir divisas en tiempo real, consultando valores actualizados desde una API externa.
-                                        </p>
-                                    </div>
-                                    <div class="icon__tec">
-                                        <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png" alt="Java" />
-                                    </div>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/hectorgm26/conversor-monedas" target="_blank"
-                                            class="btn btn-yellow">Repositorio Github</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!-- RESUME -->
-                    <section class="section tab-content resume-tab" data-tab-content="resume">
-                        <div class="container">
-
-                            <h2 class="section-title title-small">Educación</h2>
-                            <div class="timeline">
-
-                                <div class="timeline-container">
-                                    <h3 class="body-large">Instituto Profesional San Sebastián (ex IP CIISA)</h3>
-                                    <p class="label-medium timeline-date">2024 al presente</p>
-                                    <p class="body-medium">Estudiante de segundo año de la carrera de Técnico en
-                                        Programación y
-                                        Análisis de sistemas.</p>
-                                </div>
-
-                                <div class="timeline-container">
-                                    <h3 class="body-large">Alura Latam (Oracle Next Education)</h3>
-                                    <p class="label-medium timeline-date">2024-2025 (Finalizado)</p>
-                                    <p class="body-medium">Graduado del programa ONE de Oracle, con formación online en
-                                        habilidades blandas, lógica de programación y backend.</p>
-                                </div>
-
-                                <div class="timeline-container">
-                                    <h3 class="body-large">Universidad Alberto Hurtado</h3>
-                                    <p class="label-medium timeline-date">2016 — 2022 (Finalizado)</p>
-                                    <p class="body-medium">Egresado de la carrera de Derecho.</p>
-                                </div>
-
-                            </div>
-
-                            <br>
-                            <hr><br>
-
-                            <h2 class="section-title title-small">Experiencia laboral</h2>
-                            <div class="timeline">
-
-                                <div class="timeline-container">
-                                    <h3 class="body-large">Procurador Judicial - Clínica Jurídica de Transparencia y
-                                        DD.HH. (Universidad Alberto Hurtado)</h3>
-                                    <p class="label-medium timeline-date">Marzo 2021 — Abril 2022</p>
-                                    <p class="body-medium">
-                                        Encargado de la gestión y monitoreo de causas judiciales relacionadas con
-                                        violaciones graves a los derechos humanos, incluyendo interposición de acciones
-                                        de amparo.
-                                    </p>
-                                </div>
-
-                                <!-- <div class="timeline-container">
+                  <!-- <div class="timeline-container">
                                     INGRESAR AQUÍ
                                 </div> -->
+                </div>
+              </div>
+            </section>
 
-                            </div>
+            <section
+              class="section tab-content contact-tab"
+              data-tab-content="skills"
+            >
+              <div class="container">
+                <!-- LENGUAJES DE PROGRAMACIÓN -->
+                <div class="skill-category">
+                  <h3 class="category-title">Lenguajes de programación</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
+                        alt="JavaScript"
+                        class="icon"
+                      />
+                      <span class="tech-label">JavaScript</span>
+                    </div>
 
-                        </div>
-                    </section>
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
+                        alt="TypeScript"
+                        class="icon"
+                      />
+                      <span class="tech-label">TypeScript</span>
+                    </div>
 
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png"
+                        alt="Java"
+                        class="icon"
+                      />
+                      <span class="tech-label">Java</span>
+                    </div>
 
-                    <section class="section tab-content contact-tab" data-tab-content="skills">
-    <div class="container">
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png"
+                        alt="PHP"
+                        class="icon"
+                      />
+                      <span class="tech-label">PHP</span>
+                    </div>
 
-        <!-- LENGUAJES DE PROGRAMACIÓN -->
-        <div class="skill-category">
-            <h3 class="category-title">Lenguajes de programación</h3>
-            <div class="tech-icons">
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" class="icon">
-                    <span class="tech-label">JavaScript</span>
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/go.png"
+                        alt="Go"
+                        class="icon"
+                      />
+                      <span class="tech-label">Go</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" class="icon">
-                    <span class="tech-label">TypeScript</span>
+                <!-- HERRAMIENTAS -->
+                <div class="skill-category">
+                  <h3 class="category-title">Herramientas</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=git"
+                        alt="Git"
+                        class="icon"
+                      />
+                      <span class="tech-label">Git</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png"
+                        alt="Linux"
+                        class="icon"
+                      />
+                      <span class="tech-label">Linux</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=postman"
+                        alt="Postman"
+                        class="icon"
+                      />
+                      <span class="tech-label">Postman</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://images.icon-icons.com/2552/PNG/512/chrome_devtools_browser_logo_icon_153005.png"
+                        alt="Chrome DevTools"
+                        class="icon"
+                      />
+                      <span class="tech-label">DevTools</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/intellij.png"
+                        alt="IntelliJ IDEA"
+                        class="icon"
+                      />
+                      <span class="tech-label">IntelliJ IDEA</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png"
+                        alt="VS Code"
+                        class="icon"
+                      />
+                      <span class="tech-label">VS Code</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/android_studio.png"
+                        alt="Swagger"
+                        class="icon"
+                      />
+                      <span class="tech-label">Android Studio</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://toppng.com/uploads/preview/jira-software-logo-jira-software-logo-11562914188wp8r59nt10.png"
+                        alt="Jira"
+                        class="icon"
+                      />
+                      <span class="tech-label">Jira</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://cdn.worldvectorlogo.com/logos/laragon.svg"
+                        alt="Laragon"
+                        class="icon"
+                      />
+                      <span class="tech-label">Laragon</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png"
+                        alt="Swagger"
+                        class="icon"
+                      />
+                      <span class="tech-label">Swagger</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/java.png" alt="Java" class="icon">
-                    <span class="tech-label">Java</span>
+                <!-- BACKEND -->
+                <div class="skill-category">
+                  <h3 class="category-title">Backend</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png"
+                        alt="Spring Boot"
+                        class="icon"
+                      />
+                      <span class="tech-label">Spring Boot</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png"
+                        alt="Laravel"
+                        class="icon"
+                      />
+                      <span class="tech-label">Laravel</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/nest_js.png"
+                        alt="NestJS"
+                        class="icon"
+                      />
+                      <span class="tech-label">NestJS</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/php.png" alt="PHP" class="icon">
-                    <span class="tech-label">PHP</span>
+                <!-- FRONTEND -->
+                <div class="skill-category">
+                  <h3 class="category-title">Frontend</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=html"
+                        alt="HTML"
+                        class="icon"
+                      />
+                      <span class="tech-label">HTML</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=css"
+                        alt="CSS"
+                        class="icon"
+                      />
+                      <span class="tech-label">CSS</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png"
+                        alt="Bootstrap"
+                        class="icon"
+                      />
+                      <span class="tech-label">Bootstrap</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png"
+                        alt="Tailwind CSS"
+                        class="icon"
+                      />
+                      <span class="tech-label">Tailwind CSS</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png"
+                        alt="Angular"
+                        class="icon"
+                      />
+                      <span class="tech-label">Angular</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png"
+                        alt="React"
+                        class="icon"
+                      />
+                      <span class="tech-label">React</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/go.png" alt="Go" class="icon">
-                    <span class="tech-label">Go</span>
+                <!-- MOBILE -->
+                <div class="skill-category">
+                  <h3 class="category-title">Mobile</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://www.svgrepo.com/show/353912/ionic-icon.svg"
+                        alt="Ionic"
+                        class="icon"
+                      />
+                      <span class="tech-label">Ionic</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg"
+                        alt="Capacitor"
+                        class="icon"
+                      />
+                      <span class="tech-label">Capacitor</span>
+                    </div>
+                  </div>
                 </div>
 
-            </div>
+                <!-- QA TESTING -->
+                <div class="skill-category">
+                  <h3 class="category-title">QA Testing</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/junit.png"
+                        alt="JUnit"
+                        class="icon"
+                      />
+                      <span class="tech-label">JUnit</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cucumber.png"
+                        alt="Gherkin"
+                        class="icon"
+                      />
+                      <span class="tech-label">Gherkin/Cucumber</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://karatelabs.github.io/resources/logo-dark.svg"
+                        alt="Karate"
+                        class="icon"
+                      />
+                      <span class="tech-label">Karate</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=selenium"
+                        alt="Selenium"
+                        class="icon"
+                      />
+                      <span class="tech-label">Selenium</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BASES DE DATOS -->
+                <div class="skill-category">
+                  <h3 class="category-title">Bases de datos</h3>
+                  <div class="tech-icons">
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=postgres&theme=light"
+                        alt="PostgreSQL"
+                        class="icon"
+                      />
+                      <span class="tech-label">PostgreSQL</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=mysql&theme=light"
+                        alt="MySQL"
+                        class="icon"
+                      />
+                      <span class="tech-label">MySQL</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mssql.png"
+                        alt="SQL Server"
+                        class="icon"
+                      />
+                      <span class="tech-label">SQL Server</span>
+                    </div>
+
+                    <div class="tech-item">
+                      <img
+                        src="https://skillicons.dev/icons?i=sqlite&theme=light"
+                        alt="SQLite"
+                        class="icon"
+                      />
+                      <span class="tech-label">SQLite</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-
-        <!-- HERRAMIENTAS -->
-        <div class="skill-category">
-            <h3 class="category-title">Herramientas</h3>
-            <div class="tech-icons">
-                
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=git" alt="Git" class="icon">
-                    <span class="tech-label">Git</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png" alt="Linux" class="icon">
-                    <span class="tech-label">Linux</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=postman" alt="Postman" class="icon">
-                    <span class="tech-label">Postman</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://images.icon-icons.com/2552/PNG/512/chrome_devtools_browser_logo_icon_153005.png" alt="Chrome DevTools" class="icon">
-                    <span class="tech-label">DevTools</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/intellij.png" alt="IntelliJ IDEA" class="icon">
-                    <span class="tech-label">IntelliJ IDEA</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png" alt="VS Code" class="icon">
-                    <span class="tech-label">VS Code</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/android_studio.png" alt="Swagger" class="icon">
-                    <span class="tech-label">Android Studio</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://toppng.com/uploads/preview/jira-software-logo-jira-software-logo-11562914188wp8r59nt10.png" alt="Jira" class="icon">
-                    <span class="tech-label">Jira</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/laragon.svg" alt="Laragon" class="icon">
-                    <span class="tech-label">Laragon</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="Swagger" class="icon">
-                    <span class="tech-label">Swagger</span>
-                </div>
-
-                
-
-            </div>
-        </div>
-
-        <!-- BACKEND -->
-        <div class="skill-category">
-            <h3 class="category-title">Backend</h3>
-            <div class="tech-icons">
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png" alt="Spring Boot" class="icon">
-                    <span class="tech-label">Spring Boot</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png" alt="Laravel" class="icon">
-                    <span class="tech-label">Laravel</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/nest_js.png" alt="NestJS" class="icon">
-                    <span class="tech-label">NestJS</span>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- FRONTEND -->
-        <div class="skill-category">
-            <h3 class="category-title">Frontend</h3>
-            <div class="tech-icons">
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="icon">
-                    <span class="tech-label">HTML</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="icon">
-                    <span class="tech-label">CSS</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png" alt="Bootstrap" class="icon">
-                    <span class="tech-label">Bootstrap</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" class="icon">
-                    <span class="tech-label">Tailwind CSS</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/angular.png" alt="Angular" class="icon">
-                    <span class="tech-label">Angular</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" class="icon">
-                    <span class="tech-label">React</span>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- MOBILE -->
-        <div class="skill-category">
-            <h3 class="category-title">Mobile</h3>
-            <div class="tech-icons">
-
-                <div class="tech-item">
-                    <img src="https://www.svgrepo.com/show/353912/ionic-icon.svg" alt="Ionic" class="icon">
-                    <span class="tech-label">Ionic</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://www.svgrepo.com/show/353536/capacitorjs-icon.svg" alt="Capacitor" class="icon">
-                    <span class="tech-label">Capacitor</span>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- QA TESTING -->
-        <div class="skill-category">
-            <h3 class="category-title">QA Testing</h3>
-            <div class="tech-icons">
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/junit.png" alt="JUnit" class="icon">
-                    <span class="tech-label">JUnit</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/cucumber.png" alt="Gherkin" class="icon">
-                    <span class="tech-label">Gherkin/Cucumber</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://karatelabs.github.io/resources/logo-dark.svg" alt="Karate" class="icon">
-                    <span class="tech-label">Karate</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=selenium" alt="Selenium" class="icon">
-                    <span class="tech-label">Selenium</span>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- BASES DE DATOS -->
-        <div class="skill-category">
-            <h3 class="category-title">Bases de datos</h3>
-            <div class="tech-icons">
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=postgres&theme=light" alt="PostgreSQL" class="icon">
-                    <span class="tech-label">PostgreSQL</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=mysql&theme=light" alt="MySQL" class="icon">
-                    <span class="tech-label">MySQL</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mssql.png" alt="SQL Server" class="icon">
-                    <span class="tech-label">SQL Server</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="https://skillicons.dev/icons?i=sqlite&theme=light" alt="SQLite" class="icon">
-                    <span class="tech-label">SQLite</span>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-
-                </div>
-            </div>
-        </article>
+      </article>
     </main>
 
     <footer class="footer">
-        <div class="container">
-
-            <p class="body-medium"> Hecho con amor 🧡💛 | © 2024 Héctor Andrés González Mora. Todos los derechos
-                reservados. Stgo, Chile. </p>
-
-        </div>
+      <div class="container">
+        <p class="body-medium">
+          Hecho con amor 🧡💛 | © 2024 Héctor Andrés González Mora. Todos los
+          derechos reservados. Stgo, Chile.
+        </p>
+      </div>
     </footer>
 
-    <!--------------------- LINK JS FILES--------------------->
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
